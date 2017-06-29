@@ -1,1 +1,5 @@
 An HTML page was created based upon a wireframe suggestion which is then pushed to a newly created github repository.
+
+Addition to the album cover to include CSS elements including one inline, one internal, and one external style sheet in .css format.
+
+

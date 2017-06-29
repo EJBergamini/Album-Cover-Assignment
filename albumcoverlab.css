@@ -1,0 +1,17 @@
+/* This is to format a couple things on the Album project page.
+I'm going for removing the underline for the link to youtube
+and adding a few borders for anything <H2>*/
+/* I decided to add a background color for the entire page too as
+an experiment*/
+#ytlink {
+    text-decoration: none;
+}
+h2 {
+    border-style: solid;
+    border-width: 5px;
+    border-color: teal;
+    border-radius: 6px;
+}
+body {
+    background-color: aliceblue;
+}
