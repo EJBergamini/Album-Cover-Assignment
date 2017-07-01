@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!--This is for the Album Lab from Intro to Web Dev-->
+<!--This is an update to include CSS formatting, turns out I already added plenty of inline script to make the end result look like the wire frame-->
+<!--Because I have already added inline script originally I will only add the .css and internal to the head-->
+<!--For the 4th lab I found out that I already have the album image hosted in a DIV lol so I don't need to do that but will just switch it to a background of the div.
+I also found out that I have headings outside of divisions, I am not sure about proper syntax but since it doesn't affect anything I'm leaving it as-is. I suspect
+that divs should be a master and headings should be slaves.-->
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="albumcoverlab.css">
+        <style>
+        #unorderedList {
+            color: deepskyblue;
+            font-style: italic;
+        }
+        .subGroup1 {
+            background-color:lightslategrey;
+        }
+        .subGroup2 {
+            background-color:silver;
+        }
+        .subGroup3 {
+            background-color:lightgray;
+        }
+        #coverArt {
+            background-image: url("pulse8 Cover Art.png");
+            display: block;
+            margin: auto;
+            text-align: center;
+            height: 400px;
+            width: 40%;
+            background-repeat: no-repeat;
+            background-position: center;
+            /*border: 5px solid;*/
+        }
+        .hostedFont {
+            font-family: 'raleway', sans-serif;
+        }
+        </style>
+    </head>
+    <header>
+        <br>
+        <br>
+        <div id=coverArt><!--<img src="pulse8 Cover Art.png" alt="Img link broken." height="400">-->
+        </div>
+    </header>
+    <body>
+        <h1><div class="hostedFont" style="text-align:center;">Best of Chillstep: July 2016 [1 Hour of Chillstep]</div></h2>
+        <h2><div style="text-align:center;"><a id="ytlink" href=https://youtu.be/-geIgQmO60s>Pulse8</a></div></h2>
+        <h3><div style="text-align:center;">Released: July 13th, 2016</div></h3>
+    <hr></hr>
+        <h2><div class="hostedFont" style="text-align:center;">Contributing Artists:</div></h2>
+            <h3><ul class="hostedFont" id="unorderedList">
+                <li>Lightscape</li>
+                <li>Alaskan Tapes</li>
+                <li>Eternall</li>
+                <li>Kisnou</li>
+                <li>Imagine Dragons</li>
+                </ul>
+            </h3>
+        <h2><div style="text-align:center;">Tracks</div></h2>
+        <h3><div style="text-align:center;">
+            <table border="1" width="100%">
+                <tr bgcolor="grey">
+                    <th>Track #:</th>
+                    <th>Track Title:</th>
+                    <th>Track Length:</th>
+                </tr>
+                <tr>
+                    <td class="subGroup1">1</td>
+                    <td class="subGroup1">Recollection</td>
+                    <td class="subGroup1">4:40</td>
+                </tr>
+                <tr>
+                    <td class="subGroup2">2</td>
+                    <td class="subGroup2">Vacant</td>
+                    <td class="subGroup2">3:20</td>
+                </tr>
+                <tr>
+                    <td class="subGroup3">3</td>
+                    <td class="subGroup3">Brilliant</td>
+                    <td class="subGroup3">4:20</td>
+                </tr>
+            </table>
+        </div></h3>
+    </body>
+</html>
