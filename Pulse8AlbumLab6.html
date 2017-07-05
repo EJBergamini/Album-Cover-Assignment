@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!--This is for the Album Lab from Intro to Web Dev-->
+<!--This is an update to include CSS formatting, turns out I already added plenty of inline script to make the end result look like the wire frame-->
+<!--Because I have already added inline script originally I will only add the .css and internal to the head-->
+<!--For the 4th lab I found out that I already have the album image hosted in a DIV lol so I don't need to do that but will just switch it to a background of the div.
+I also found out that I have headings outside of divisions, I am not sure about proper syntax but since it doesn't affect anything I'm leaving it as-is. I suspect
+that divs should be a master and headings should be slaves.-->
+<!--6th lab, added bootstrap links. Now encountering difficulty in getting the table to add the horizontal scroll. Also trouble with getting the image to circle.
+FIXED IT: You idiot, syntax matters, don't forget to use proper syntax. DUH.-->
+<html>
+    <head>    
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
+
+        <!-- Optional theme -->
+        <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"/>
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js">
+        </script>
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+        <!-- My own stylesheet. -->
+        <link rel="stylesheet" type="text/css" href="albumcoverlab.css">
+
+        <!-- Additional embedded CSS styles.-->
+        <style>
+        #unorderedList {
+            color: deepskyblue;
+            font-style: italic;
+        }
+        /*.subGroup1 {
+            background-color:lightslategrey;
+        }
+        .subGroup2 {
+            background-color:silver;
+        }
+        .subGroup3 {
+            background-color:lightgray;
+        }*/
+        #coverArt {
+            display: block;
+            margin: auto;
+            text-align: center;
+            height: 400px;
+            width: 40%;
+            /*background-repeat: no-repeat;
+            background-position: center;*/
+        }
+        table {
+            font-style: italic;
+            background-color: lightblue;
+            table-layout: fixed;
+            width: 100%;
+        }
+        .hostedFont {
+            font-family: 'raleway', sans-serif;
+        }
+        a {
+            text-decoration: none;
+        }
+        a:hover {
+            background-color: cornflowerblue;
+            text-decoration: underline !important;
+        }
+        </style>
+    </head>
+    <header>
+        <br>
+        <br>
+        <img class="img-circle" id="coverArt" src="pulse8 Cover Art.png" alt="Img link broken.">
+        <br>
+        <br>
+    </header>
+    <body>
+        <h1><div class="hostedFont" style="text-align:center;">Best of Chillstep: July 2016 [1 Hour of Chillstep]</div></h2>
+        <h2><div style="text-align:center;"><a id="ytlink" href=https://youtu.be/-geIgQmO60s>Pulse8</a></div></h2>
+        <h3><div style="text-align:center;">Released: July 13th, 2016</div></h3>
+    <hr></hr>
+        <h2><div class="hostedFont" style="text-align:center;">Contributing Artists:</div></h2>
+            <h3><ul class="hostedFont" id="unorderedList">
+                <li>Lightscape</li>
+                <li>Alaskan Tapes</li>
+                <li>Eternall</li>
+                <li>Kisnou</li>
+                <li>Imagine Dragons</li>
+                </ul>
+            </h3>
+        <div style="text-align:center;"><h2>Tracks</h2>
+        </div>
+        <div class="table-responsive">
+            <h3><table class="table table-striped" border="2">
+                <tr bgcolor="grey">
+                    <th style="text-align:center;">Track #:</th>
+                    <th style="text-align:center;">Track Title:</th>
+                    <th style="text-align:center;">Track Length:</th>
+                </tr>
+                <tr style="text-align:center;">
+                    <td class="subGroup1">1</td>
+                    <td class="subGroup1">Recollection</td>
+                    <td class="subGroup1">4:40</td>
+                </tr>
+                <tr style="text-align:center;">
+                    <td class="subGroup2">2</td>
+                    <td class="subGroup2">Vacant</td>
+                    <td class="subGroup2">3:20</td>
+                </tr>
+                <tr style="text-align:center;">
+                    <h3>
+                    <td class="subGroup3">3</td>
+                    <td class="subGroup3">Brilliant</td>
+                    <td class="subGroup3">4:20</td>
+                </tr>
+            </h3></table>
+        </div>
+    </body>
+</html>
